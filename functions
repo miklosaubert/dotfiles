@@ -1,0 +1,7 @@
+function bdiff() {
+	diff <(xxd $1) <(xxd $2)
+}
+
+function mcd() {
+	mkdir -p -- "$1" && cd -P -- "$1"
+}
